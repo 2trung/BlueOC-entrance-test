@@ -31,13 +31,13 @@ const runTests = () => {
       input: ['55555', '22', '333', '4444', '666666'],
       output: ['22', '333', '4444', '55555', '666666'],
       description:
-        'The string lengths are [ 5, 2, 3, 4, 6 ]. The most frequent length is 2, 3, 4, 5, 6',
+        'The string lengths are [ 5, 2, 3, 4, 6 ]. The most frequent length are 2, 3, 4, 5, 6',
     },
     {
       input: ['55555', '4444', '333', '55555', '22', '4444'],
       output: ['4444', '4444', '55555', '55555'],
       description:
-        'The string lengths are [ 5, 4, 3, 5, 2, 4 ]. The most frequent length is 4 and 5',
+        'The string lengths are [ 5, 4, 3, 5, 2, 4 ]. The most frequent length are 4 and 5',
     },
     {
       input: [],

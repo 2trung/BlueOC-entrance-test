@@ -1,4 +1,4 @@
-import { Route, Routes, Outlet } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Layout from './layout/Layout'
 import './App.css'
 import Home from './pages/Home'

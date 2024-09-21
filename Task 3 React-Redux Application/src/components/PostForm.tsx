@@ -2,11 +2,7 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
-import {
-  addPost,
-  loadingSelector,
-  errorSelector,
-} from '../redux/reducers/postsSlice'
+import { addPost, loadingSelector } from '../redux/reducers/postsSlice'
 
 type Post = {
   title: string
@@ -17,11 +13,7 @@ const PostForm = () => {
   const navigate = useNavigate()
   const loading = useSelector(loadingSelector)
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Post>()
+  const { register, handleSubmit } = useForm<Post>()
 
   const onSubmit: SubmitHandler<Post> = async (data) => {
     const res = await dispatch(addPost({ ...data, userId: 1 }) as any)
