@@ -13,7 +13,7 @@ Solution:
 
 # Task 3: React-Redux Application
 
-[This is deployed website](https://task3.2trung.com/){:target="_blank"}
+This is deployed website: https://task3.2trung.com/
 
 Technology:
 
